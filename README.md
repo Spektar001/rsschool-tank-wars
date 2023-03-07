@@ -1,4 +1,4 @@
-##DEPLOY: https://rs-tank-wars.netlify.app/\
+## DEPLOY: https://rs-tank-wars.netlify.app/
 ### Tank wars clone for final RsSchool task
 #### INSTRUCTIONS
 **The game is adapted only for desktops!**\
