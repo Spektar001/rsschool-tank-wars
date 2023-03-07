@@ -1,0 +1,87 @@
+/* menu-screen ------------------------------------------------- */
+
+.screen__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    color: white;
+}
+
+/* menu-items ------------------------------------------------- */
+
+.menu__item_mode,
+.menu__item_players,
+.menu__item_sound,
+.menu__item_color,
+.menu__item_language {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+}
+
+.menu__item_selected {
+    background-color: beige;
+    color: black;
+}
+
+/* menu-switchers ------------------------------------------------- */
+
+.menu__switchers {
+    display: flex;
+    gap: 10px;
+}
+
+.menu__switcher {
+    color: gainsboro;
+}
+
+.menu__switcher {
+    color: gainsboro;
+}
+
+.menu__item_selected .menu__switcher:not(.menu__switcher_selected) {
+    color: black;
+}
+
+.menu__switcher_selected {
+    color: coral;
+}
+
+/* menu-switchers-color ------------------------------------------------- */
+
+.menu__switcher_color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 15px;
+    font-size: 1.1rem;
+}
+
+.color_sand {
+    background-color: rgb(247, 222, 191);
+}
+
+.color_blue {
+    background-color: rgb(93, 136, 255);
+}
+
+.color_black {
+    background-color: rgb(121, 121, 121);
+}
+
+/* menu-button ------------------------------------------------- */
+
+.screen__menu button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 0;
+}
+
+.screen__menu button:not(.menu__item_selected) {
+    color: white;
+    cursor: default;
+}

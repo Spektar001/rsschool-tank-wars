@@ -1,0 +1,42 @@
+/* instructions-screen ------------------------------------------------- */
+
+.instructions__screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 30px;
+    color: white;
+    background-color: black;
+}
+
+.instructions__conraiter {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* instructions-list ------------------------------------------------- */
+
+.instructions__list {
+    border: 1px solid coral;
+    padding: 10px 15px;
+}
+
+.instructions__list_item {
+    padding: 5px 0;
+    line-height: 150%;
+}
+
+/* instructions-button ------------------------------------------------- */
+
+.instructions__button_back {
+    align-self: center;
+    width: 60%;	
+    padding: 10px;
+    background-color: beige;
+    color: black;
+    border-radius: 0;
+    cursor: default;
+}

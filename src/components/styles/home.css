@@ -1,0 +1,30 @@
+/* home-screen ------------------------------------------------- */
+
+.home__screen {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.home__screen_title {
+    font-size: 3.8rem;
+    animation: title-shine 2s infinite;
+}
+
+.home__screen_subtitle {
+    font-size: 1.5rem;
+    color: coral;
+}
+
+/* animation ------------------------------------------------- */
+
+@keyframes title-shine {
+    0%   {text-shadow: 0 0 3px coral; color: #fff;}
+    25%  {text-shadow: 0 0 12px coral;}
+    50%  {text-shadow: 0 0 20px coral; color: coral;}
+    75%  {text-shadow: 0 0 12px coral;}
+    100% {text-shadow: 0 0 3px coral; color: #fff;}
+}

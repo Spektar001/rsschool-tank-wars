@@ -1,0 +1,25 @@
+export const explShell = {
+    img: new Image(),
+    frame: [
+        [0, 0],
+        [60, 0],
+        [120, 0],
+        [180, 0],
+        [0, 60],
+        [60, 60],
+        [120, 60],
+        [180, 60],
+        [0, 120],
+        [60, 120],
+        [120, 120],
+        [180, 120],
+        [0, 180],
+        [60, 180],
+        [120, 180],
+    ],
+    speed: 10,
+    amountFrame: 15,
+    height: 60,
+    width: 60,
+};
+explShell.img.src = '../../assets/images/expl.png';

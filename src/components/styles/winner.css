@@ -1,0 +1,45 @@
+/* winner-screen ------------------------------------------------- */
+
+.winner__screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    color: white;
+    background-color: black;
+}
+
+/* winner-image ------------------------------------------------- */
+
+.winner__image_container {
+    aspect-ratio: 1/1;
+    width: 20%;
+}
+
+.winner__image {
+    aspect-ratio: 1/1;
+    width: 100%;
+    background-image: url(../../assets/images/trophie.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: trophie-move 2s infinite;
+}
+
+/* winner-button ------------------------------------------------- */
+
+.winner__screen_restart {
+    color: white;
+    cursor: default;
+}
+
+/* animation ------------------------------------------------- */
+
+@keyframes trophie-move {
+    0%   {transform: translateY(0);}
+    25%  {transform: translateY(-5px);}
+    50%  {transform: translateY(0);}
+    75%  {transform: translateY(5px);}
+    100% {transform: translateY(0);}
+}

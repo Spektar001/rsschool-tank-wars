@@ -1,0 +1,17 @@
+/* pause-screen ------------------------------------------------- */
+
+.screen__pause {
+    z-index: 150;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.pause__text {
+    font-size: 2.5rem;
+}

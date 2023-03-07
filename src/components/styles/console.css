@@ -1,0 +1,242 @@
+/* game-console ------------------------------------------------- */
+
+.game__console {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.game__console_sand {
+    background-color: rgb(247, 222, 191);
+    border: 15px solid rgb(253, 232, 205);
+    border-top: 17px solid rgb(253, 236, 214);
+    border-bottom: 20px solid rgb(226, 194, 155);
+    border-left: 20px solid rgb(194, 167, 133);
+}
+
+.game__console_blue {
+    background-color: rgb(93, 136, 255);
+    border: 15px solid rgb(148, 175, 248);
+    border-top: 17px solid rgb(196, 209, 245);
+    border-bottom: 20px solid rgb(82, 117, 214);
+    border-left: 20px solid rgb(50, 73, 138);
+}
+
+.game__console_black {
+    background-color: rgb(121, 121, 121);
+    border: 15px solid rgb(187, 187, 187);
+    border-top: 17px solid rgb(202, 202, 202);
+    border-bottom: 20px solid rgb(75, 75, 75);
+    border-left: 20px solid rgb(59, 59, 59);
+}
+
+/* game-screen ------------------------------------------------- */
+
+.main__screen {
+    position: relative;
+}
+
+.game__screen,
+.info__screen {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 10px solid grey;
+    border-top: 10px solid rgb(97, 97, 97);
+    border-bottom: 10px solid rgb(190, 190, 190);
+    border-left: 10px solid rgb(206, 206, 206);
+}
+
+.info__screen {
+    z-index: 300;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.info__screen_hidden {
+    display: none;
+}
+
+/* game-controls ------------------------------------------------- */
+
+.game__controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.game__controls_circle {
+    aspect-ratio: 1/1;
+    width: fit-content;
+    padding: 5px;
+    background-color: rgb(223, 200, 171);
+    border: 3px solid rgb(196, 169, 136);
+    border-left: 5px solid rgb(255, 204, 141);
+    border-bottom: 5px solid rgb(241, 205, 161);
+    border-radius: 50%;
+}
+
+.game__controls_circle_sand {
+    background-color: rgb(223, 200, 171);
+    border: 3px solid rgb(196, 169, 136);
+    border-left: 5px solid rgb(255, 204, 141);
+    border-bottom: 5px solid rgb(241, 205, 161);
+}
+
+.game__controls_circle_blue {
+    background-color: rgb(93, 136, 255);
+    border: 3px solid rgb(69, 107, 209);
+    border-left: 5px solid rgb(134, 166, 255);
+    border-bottom: 5px solid rgb(164, 188, 255);
+}
+
+.game__controls_circle_black {
+    background-color: rgb(121, 121, 121);
+    border: 3px solid rgb(77, 77, 77);
+    border-left: 5px solid rgb(172, 172, 172);
+    border-bottom: 5px solid rgb(187, 187, 187);
+}
+
+/* game-cross ------------------------------------------------- */
+
+.game__controls_cross {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding: 5px;
+    background-color: rgb(31, 28, 28);
+    border-radius: 50%;
+    box-shadow: -2px 3px 3px 0 rgba(0, 0, 0, 0.644);
+}
+
+.cross__vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cross__arrow {
+    width: 40px;
+    height: 20px;
+    background-color: rgb(107, 107, 107);
+    border-radius: 5px;
+}
+
+.cross__arrow:active {
+    background-color: rgb(83, 83, 83);
+    transform: scale(0.9);
+}
+
+.cross__arrow_up,
+.cross__arrow_down {
+    width: 20px;
+    height: 40px;
+}
+
+.cross__arrow_left {
+    border-radius: 5px;
+}
+
+/* game-options ------------------------------------------------- */
+
+.game__controls_options {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 40%;
+    font-family: 'Play', sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.cross__options_buttons,
+.cross__options_text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cross__options_buttons {
+    padding: 10px;
+    background-color: rgb(223, 200, 171);
+    border: 3px solid rgb(196, 169, 136);
+    border-left: 5px solid rgb(255, 204, 141);
+    border-bottom: 5px solid rgb(255, 204, 141);
+    border-radius: 20px;
+}
+
+.cross__options_buttons_sand {
+    background-color: rgb(223, 200, 171);
+    border: 3px solid rgb(196, 169, 136);
+    border-left: 5px solid rgb(255, 204, 141);
+    border-bottom: 5px solid rgb(255, 204, 141);
+}
+
+.cross__options_buttons_blue {
+    background-color: rgb(93, 136, 255);
+    border: 3px solid rgb(90, 118, 196);
+    border-left: 5px solid rgb(140, 171, 255);
+    border-bottom: 5px solid rgb(179, 199, 255);
+}
+
+.cross__options_buttons_black {
+    background-color: rgb(121, 121, 121);
+    border: 3px solid rgb(66, 66, 66);
+    border-left: 5px solid rgb(170, 170, 170);
+    border-bottom: 5px solid rgb(177, 177, 177);
+}
+
+.options_button {
+    width: 45%;
+    height: 20px;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: -2px 3px 3px 0 rgba(0, 0, 0, 0.644);
+}
+
+.cross__options_text {
+    border: 5px solid transparent;
+}
+
+.options_text {
+    width: 45%;
+    text-align: center;
+}
+
+/* game-fire-button ------------------------------------------------- */
+
+.launch__button {
+    aspect-ratio: 1/1;
+    width: 100px;
+    background-color: red;
+    box-shadow: -2px 3px 2px 0 black;
+    border-radius: 50%;
+    font-family: 'Play', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+.options_button:active,
+.launch__button:active {
+    transform: scale(0.95);
+}
+
+/* game-naming ------------------------------------------------- */
+
+.game__naming {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-family: 'Play', sans-serif;
+    font-size: 1.5rem;
+}
+
+.naming__rs_link {
+    font-weight: bold;
+    color: red;
+    text-shadow: 2px 2px 0 coral;
+}

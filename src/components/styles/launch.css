@@ -1,0 +1,57 @@
+/* launch-screen ------------------------------------------------- */
+
+.launch__screen {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url('../../assets/images/start_screen.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.launch__menu {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* launch-button ------------------------------------------------- */
+
+.launch__menu_btn {
+    width: 50%;
+    padding: 10px;
+    font-size: 1.7rem;
+    border: 3px solid black;
+    border-radius: 0;
+    cursor: default;
+    user-select: none;
+}
+
+/* launch-footer ------------------------------------------------- */
+
+.launch__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 30px;
+    color: white;
+    background-color: black;
+}
+
+.launch__rslink {
+    width: 50px;
+    height: 30px;
+    background-image: url('../../assets/images/rs_school_logo.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.launch__github {
+    color: white;
+    font-size: 0.8rem;
+}
